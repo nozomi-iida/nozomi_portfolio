@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         primary: "#1E90FF",
+        bg: "#F7F7F7",
       },
       flex: { "1/2": "0 0 50%" },
       boxShadow: {

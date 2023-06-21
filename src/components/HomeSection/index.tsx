@@ -8,7 +8,7 @@ import {
 
 export const HomeSection = () => {
   return (
-    <section className="flex min-h-screen px-page" id="home">
+    <section className="min-h-screen flex" id="home">
       <div className="flex w-full items-center">
         <div className="flex-1/2 w-full p-4">
           <div className="relative w-80 h-80 flex mx-auto">
@@ -21,7 +21,8 @@ export const HomeSection = () => {
           </div>
         </div>
         <div className="flex-1/2 w-full">
-          <p>Hi THERE! I'M</p>
+          <p>Hi THERE! I&apos;M</p>
+
           <h1 className="my-6 text-4xl">
             <span className="text-sky-500">NOZOMI</span> IIDA
           </h1>
