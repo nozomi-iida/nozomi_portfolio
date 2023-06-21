@@ -1,7 +1,7 @@
 import { AboutSection } from "@/components/AboutSection";
 import { HomeSection } from "@/components/HomeSection";
 import { NavigationBar } from "@/components/NavigationBar";
-import Image from "next/image";
+import { SkillsSection } from "@/components/SkillsSection";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <div className="px-page">
         <HomeSection />
         <AboutSection />
+        <SkillsSection />
       </div>
     </main>
   );

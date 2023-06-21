@@ -19,7 +19,10 @@ module.exports = {
       },
       flex: { "1/2": "0 0 50%" },
       boxShadow: {
-        homeIcon: "12px 0 #bae6fd, 24px 0 #e0f2fe, 36px 0 #f0f9ff",
+        "home-icon": "12px 0 #bae6fd, 24px 0 #e0f2fe, 36px 0 #f0f9ff",
+      },
+      gridTemplateColumns: {
+        "auto-fill": "repeat(auto-fill, minmax(80px, 1fr));",
       },
     },
   },

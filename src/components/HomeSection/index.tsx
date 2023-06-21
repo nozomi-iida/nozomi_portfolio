@@ -15,7 +15,7 @@ export const HomeSection = () => {
             <Image
               fill
               alt="nozomi_icon"
-              className="object-contain shadow-homeIcon rounded-full"
+              className="object-contain shadow-home-icon rounded-full"
               src="/nozomi_icon.JPG"
             />
           </div>
