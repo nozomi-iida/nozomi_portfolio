@@ -24,6 +24,15 @@ module.exports = {
       gridTemplateColumns: {
         "auto-fill": "repeat(auto-fill, minmax(80px, 1fr));",
       },
+      maxWidth: {
+        "work-card-img": "360px",
+      },
+      height: {
+        "work-card-img": "200px",
+      },
+      margin: {
+        header: "80px",
+      },
     },
   },
   plugins: [],

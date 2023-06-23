@@ -8,9 +8,9 @@ import {
 
 export const HomeSection = () => {
   return (
-    <section className="min-h-screen flex" id="home">
-      <div className="flex w-full items-center">
-        <div className="flex-1/2 w-full p-4">
+    <section className="min-h-screen flex mt-header" id="home">
+      <div className="flex w-full items-center flex-wrap justify-cente">
+        <div className="flex-1/2 w-full py-4 pr-10 pl-4">
           <div className="relative w-80 h-80 flex mx-auto">
             <Image
               fill
