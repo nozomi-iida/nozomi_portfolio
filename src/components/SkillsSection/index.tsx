@@ -5,7 +5,7 @@ export const SkillsSection = () => {
   return (
     <section className="py-20" id="skills">
       <SectionTitle title="SKILLS" subtitle="CHECK OUT MY" />
-      <div>
+      <div className="p-12 rounded-3xl bg-white">
         <ul className="grid gap-12 grid-cols-auto-fill">
           <li>
             <IconBox

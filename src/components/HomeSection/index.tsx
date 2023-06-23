@@ -35,7 +35,7 @@ export const HomeSection = () => {
             <div>
               <Link
                 href="/NozomiIida_cv.pdf"
-                className="bg-sky-500 text-white rounded-3xl py-4 px-8 text-sm hover:shadow-xl transition-shadow"
+                className="bg-sky-500 text-white rounded-3xl py-3 px-8 text-sm hover:shadow-xl transition-shadow"
                 target="_blank"
               >
                 RESUME
