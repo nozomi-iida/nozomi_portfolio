@@ -11,12 +11,18 @@ export const HomeSection = () => {
     <section className="min-h-screen flex mt-header" id="home">
       <div className="flex w-full items-center flex-wrap justify-cente">
         <div className="flex-1/2 w-full py-4 pr-10 pl-4">
-          <div className="relative w-80 h-80 flex mx-auto">
+          <div className="relative w-80 h-80 flex mx-auto transform-style-3d duration-700 ease-in hover:rotate-y-180">
             <Image
               fill
               alt="nozomi_icon"
-              className="object-contain shadow-home-icon rounded-full"
-              src="/nozomi_icon.JPG"
+              className="object-contain shadow-home-icon rounded-full backface-hidden	z-10"
+              src="/nozomi_private.JPG"
+            />
+            <Image
+              fill
+              alt="nozomi_icon"
+              className="object-contain shadow-home-icon rounded-full backface-hidden rotate-y-180"
+              src="/nozomi_work_icon.JPG"
             />
           </div>
         </div>

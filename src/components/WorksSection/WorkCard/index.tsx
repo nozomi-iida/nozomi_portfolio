@@ -8,6 +8,7 @@ type WrokCardProps = {
   description: string;
   liveLink?: string;
   githubLink: string;
+  imageUrl?: string;
 };
 
 export const WrokCard: FC<WrokCardProps> = ({
@@ -16,6 +17,7 @@ export const WrokCard: FC<WrokCardProps> = ({
   description,
   liveLink,
   githubLink,
+  imageUrl,
 }) => {
   return (
     <div className="flex p-8 gap-6 flex-wrap shadow-lg rounded-3xl">
@@ -25,7 +27,7 @@ export const WrokCard: FC<WrokCardProps> = ({
           fill
           alt="nozomi_icon"
           className="object-contain"
-          src="/nozomi_icon.JPG"
+          src={imageUrl || "/nozomi_work_icon.JPG"}
         />
       </div>
       <div className="">
@@ -34,10 +36,16 @@ export const WrokCard: FC<WrokCardProps> = ({
           Technologies Used:{" "}
           <span className="text-sky-500">{technologies.join(", ")}</span>
         </p>
-        <p className="text-sm whitespace-pre-line">{description}</p>
-        <div className="flex text-sky-500">
-          {liveLink && <Link href={liveLink}>Live</Link>}
-          <Link href={githubLink}>Repo</Link>
+        <p className="text-sm whitespace-pre-wrap">{description}</p>
+        <div className="flex text-sky-500 gap-6 underline">
+          {liveLink && (
+            <Link target="_blank" href={liveLink}>
+              Live
+            </Link>
+          )}
+          <Link target="_blank" href={githubLink}>
+            Repo
+          </Link>
         </div>
       </div>
     </div>
