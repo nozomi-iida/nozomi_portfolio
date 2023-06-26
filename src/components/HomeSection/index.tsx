@@ -50,7 +50,8 @@ export const HomeSection = () => {
             <div className="flex gap-4">
               <div className="flex items-center">
                 <Link
-                  href="linkedin.com/in/nozomi-iida"
+                  href="https://www.linkedin.com/in/nozomi-iida"
+                  target="_blank"
                   className="block p-3 bg-white rounded-xl shadow-md transition-shadow hover:shadow-xl"
                 >
                   <AiFillLinkedin className="text-sky-500 w-5 h-5" />
@@ -58,18 +59,11 @@ export const HomeSection = () => {
               </div>
               <div className="flex items-center">
                 <Link
-                  href=""
+                  href="https://github.com/nozomi-iida"
+                  target="_blank"
                   className="p-3 bg-white rounded-xl shadow-md transition-shadow hover:shadow-xl"
                 >
                   <AiOutlineGithub className="text-sky-500 w-5 h-5" />
-                </Link>
-              </div>
-              <div className="flex items-center">
-                <Link
-                  href=""
-                  className="p-3 bg-white rounded-xl shadow-md transition-shadow hover:shadow-xl"
-                >
-                  <AiOutlineTwitter className="text-sky-500 w-5 h-5" />
                 </Link>
               </div>
             </div>

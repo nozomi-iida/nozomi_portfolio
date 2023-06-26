@@ -5,7 +5,7 @@ export const WorksSection = () => {
   return (
     <section className="py-20" id="works">
       <SectionTitle title="PROJECTS" subtitle="TAKE A LOOK AT MY" />
-      <div className="p-12 rounded-3xl bg-white">
+      <div className="p-12 rounded-3xl bg-white flex flex-col gap-6">
         <WrokCard
           title="Diary for Australia working woliday"
           description={`- Wanted to make a working holiday diary - Try to use app router with nextjs@13.\n- Manage content with contentful as CMS.`}
