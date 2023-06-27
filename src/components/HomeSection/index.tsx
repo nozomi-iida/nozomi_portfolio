@@ -4,7 +4,10 @@ import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 
 export const HomeSection = () => {
   return (
-    <section className="min-h-screen flex mt-header" id="home">
+    <section
+      className="min-h-screen flex pt-header box-content md:pt-0"
+      id="home"
+    >
       <div className="flex w-full items-center flex-wrap justify-center">
         <div className="flex-1/2 w-full py-4 pr-10 pl-4">
           <div className="relative w-80 h-80 flex mx-auto transform-style-3d duration-700 ease-in hover:rotate-y-180">
