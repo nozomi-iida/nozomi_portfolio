@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="bg-bg">
       <NavigationBar />
-      <div className="px-page">
+      <div className="px-16 lg:px-8 md:px-4">
         <HomeSection />
         <AboutSection />
         <SkillsSection />

@@ -1,15 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  AiOutlineTwitter,
-  AiOutlineGithub,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 
 export const HomeSection = () => {
   return (
     <section className="min-h-screen flex mt-header" id="home">
-      <div className="flex w-full items-center flex-wrap justify-cente">
+      <div className="flex w-full items-center flex-wrap justify-center">
         <div className="flex-1/2 w-full py-4 pr-10 pl-4">
           <div className="relative w-80 h-80 flex mx-auto transform-style-3d duration-700 ease-in hover:rotate-y-180">
             <Image
@@ -26,25 +22,28 @@ export const HomeSection = () => {
             />
           </div>
         </div>
-        <div className="flex-1/2 w-full">
+        <div className="flex-1/2 lg:flex-none w-full flex flex-col lg:items-center">
           <p>Hi THERE! I&apos;M</p>
 
           <h1 className="my-6 text-4xl">
             <span className="text-sky-500">NOZOMI</span> IIDA
           </h1>
-          <p>
-            A <span className="text-sky-500">Front-End Web Developer</span>{" "}
+          <p className="tracking-wide text-gray-500	lg:text-center">
+            A{" "}
+            <span className="text-sky-500 text-lg">
+              Front-End Web Developer
+            </span>{" "}
             passionate about creating interactive applications and experiences
             on the web.
           </p>
-          <div className="flex gap-6 mt-6 gap-6 items-center">
+          <div className="flex mt-6 gap-6 items-center">
             <div>
               <Link
                 href="/NozomiIida_cv.pdf"
                 className="bg-sky-500 text-white rounded-3xl py-3 px-8 text-sm hover:shadow-xl transition-shadow"
                 target="_blank"
               >
-                RESUME
+                Resume
               </Link>
             </div>
             <div className="flex gap-4">

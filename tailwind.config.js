@@ -8,9 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      padding: {
-        page: "64px",
-      },
       lineHeight: {
         nav: "80px",
       },
@@ -34,6 +31,13 @@ module.exports = {
       margin: {
         header: "80px",
       },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+      xl: { max: "1279px" },
+      lg: { max: "1023px" },
+      md: { max: "767px" },
+      sm: { max: "639px" },
     },
   },
   plugins: [require("tailwindcss-3d")],
