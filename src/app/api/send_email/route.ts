@@ -16,10 +16,11 @@ export const POST = async (req: Request, res: Response) => {
     sgMail.setApiKey(sendGridApiKey);
     const msg = {
       to: myEmail,
-      from: email,
+      from: myEmail,
       subject: subject,
       text: message,
       html: message,
+      reply_to: email,
     };
     await sgMail.send(msg);
     return NextResponse.json({}, { status: 200 });

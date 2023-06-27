@@ -1,9 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export const NavigationBar = () => {
+  const [showShadow, setShowShadow] = useState(false);
+
+  useEffect(() => {
+    const addShadow = () => {
+      if (window.pageYOffset === 0) {
+        setShowShadow(false);
+      } else {
+        setShowShadow(true);
+      }
+    };
+
+    window.addEventListener("scroll", addShadow);
+    return () => window.removeEventListener("scroll", addShadow);
+  }, [setShowShadow]);
+
   return (
-    <div className="flex justify-between bg-sky-500 absolute top-0 max-w-sceen w-full px-16 lg:px-8 md:px-4">
+    <div
+      className={`flex justify-between fixed top-0 w-full z-docked bg-sky-500 transition-shadow px-16 lg:px-8 md:px-4 ${
+        showShadow ? "shadow-md" : "shadow-none"
+      }`}
+    >
       <div className="relative w-20">
         <Image
           fill
