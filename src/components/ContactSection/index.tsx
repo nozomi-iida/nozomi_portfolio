@@ -2,6 +2,7 @@
 
 import { SectionTitle } from "../SectionTitle";
 import { useForm } from "react-hook-form";
+import { useToast } from "../ui/use-toast";
 
 type ContactForm = {
   email: string;
@@ -11,6 +12,7 @@ type ContactForm = {
 
 export const ContactSection = () => {
   const { register, handleSubmit } = useForm<ContactForm>();
+  const { toast } = useToast();
   const onSendMail = handleSubmit(async (params) => {
     try {
       await fetch("/api/send_email", {
@@ -20,7 +22,10 @@ export const ContactSection = () => {
         },
         method: "POST",
       });
-      // TODO: Add success message
+      toast({
+        className: "bg-green-500 text-white",
+        description: "Your message has been sent.",
+      });
     } catch (error) {}
   });
   return (
