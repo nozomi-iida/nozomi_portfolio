@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const NavigationBar = () => {
   return (
-    <div className="flex justify-between px-page bg-sky-500 absolute top-0 max-w-sceen w-full">
+    <div className="flex justify-between bg-sky-500 absolute top-0 max-w-sceen w-full px-16 lg:px-8 md:px-4">
       <div className="relative w-20">
         <Image
           fill

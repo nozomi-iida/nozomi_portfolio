@@ -20,9 +20,8 @@ export const WrokCard: FC<WrokCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <div className="flex p-8 gap-6 flex-wrap shadow-lg rounded-3xl">
-      {/* TODO: ADD RESPONSIV */}
-      <div className="relative max-w-work-card-img w-full h-work-card-img">
+    <div className="flex p-8 gap-6 flex-wrap shadow-md rounded-3xl">
+      <div className="relative flex-work-card-img md:flex-none w-full h-work-card-img">
         <Image
           fill
           alt="nozomi_icon"
@@ -30,14 +29,14 @@ export const WrokCard: FC<WrokCardProps> = ({
           src={imageUrl || "/nozomi_work_icon.JPG"}
         />
       </div>
-      <div className="">
+      <div className="flex-1">
         <h3 className="text-lg text-medium">{title}</h3>
-        <p>
+        <p className="mt-2">
           Technologies Used:{" "}
           <span className="text-sky-500">{technologies.join(", ")}</span>
         </p>
-        <p className="text-sm whitespace-pre-wrap">{description}</p>
-        <div className="flex text-sky-500 gap-6 underline">
+        <p className="text-sm whitespace-pre-wrap mt-6">{description}</p>
+        <div className="flex text-sky-500 gap-6 underline mt-6">
           {liveLink && (
             <Link target="_blank" href={liveLink}>
               Live

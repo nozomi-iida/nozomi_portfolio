@@ -15,7 +15,7 @@ module.exports = {
         primary: "#1E90FF",
         bg: "#F7F7F7",
       },
-      flex: { "1/2": "0 0 50%" },
+      flex: { "1/2": "0 0 50%", "work-card-img": "0 0 40%" },
       boxShadow: {
         "home-icon": "12px 0 #bae6fd, 24px 0 #e0f2fe, 36px 0 #f0f9ff",
       },
