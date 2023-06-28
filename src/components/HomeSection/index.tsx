@@ -5,7 +5,7 @@ import { AiOutlineGithub, AiFillLinkedin } from "react-icons/ai";
 export const HomeSection = () => {
   return (
     <section
-      className="min-h-screen flex pt-header box-content md:pt-0"
+      className="min-h-screen flex pt-header box-border md:pt-0"
       id="home"
     >
       <div className="flex w-full items-center flex-wrap justify-center">
@@ -14,7 +14,7 @@ export const HomeSection = () => {
             <Image
               fill
               alt="nozomi_icon"
-              className="object-contain shadow-home-icon rounded-full backface-hidden	z-10"
+              className="object-contain shadow-home-icon rounded-full backface-hidden	z-home-img"
               src="/nozomi_private.JPG"
             />
             <Image

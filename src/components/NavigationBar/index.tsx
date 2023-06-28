@@ -34,7 +34,7 @@ export const NavigationBar = () => {
     <div>
       <Sheet>
         <SheetTrigger asChild>
-          <button className="hidden md:block fixed top-9 right-9">
+          <button className="hidden md:block fixed top-9 right-9 z-docked">
             <AiOutlineMenu className="w-9 h-9" />
           </button>
         </SheetTrigger>

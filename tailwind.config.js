@@ -57,6 +57,7 @@ module.exports = {
         hide: -1,
         auto: "auto",
         base: 0,
+        "home-img": 1,
         docked: 10,
         dropdown: 1000,
         banner: 1200,
