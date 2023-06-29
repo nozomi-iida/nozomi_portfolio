@@ -12,16 +12,18 @@ export const WorksSection = () => {
           technologies={["Nextjs", "Contentful", "Tailwind CSS"]}
           githubLink="https://github.com/nozomi-iida/nozo-blog"
           liveLink="https://nozo-blog-one.vercel.app"
+          imageUrl="/nozo_blog.png"
         />
         <WrokCard
           title="Meeting scheduler with Google calendar"
-          description={`- A chrome extension that opens the MTG url in your browser when it's time so you don't be late for MTG\n- Use Google Calendar API.\n- Use Chakra UI.`}
+          description={`- A chrome extension that opens the meeting url in your browser when it's time so you don't be late for MTG\n- Use Google Calendar API.\n- Use Chakra UI.`}
           technologies={[
             "Chrome Extension",
             "React",
             "Google Calendar API",
             "Chackra UI",
           ]}
+          imageUrl="/meeting_scheduler.png"
           githubLink="https://github.com/nozomi-iida/meeting-scheduler-with-google-calender"
           liveLink="https://chrome.google.com/webstore/detail/meeting-scheduler-with-go/mkildadmiffilfedeghakgbjldpbjflk?hl=ja&authuser=0"
         />
@@ -29,6 +31,7 @@ export const WorksSection = () => {
           title="Kindle daily sale twitter bot"
           description={`- Wanted to learn about Rust.\n- Wanted to know the daily sale of kindle books.`}
           technologies={["Rust", "Twitter API"]}
+          imageUrl="/kindle_daily_sale.png"
           githubLink="https://github.com/nozomi-iida/kindle_daily_sale_twitter_bot"
           liveLink="https://twitter.com/kindleDailyBot"
         />
