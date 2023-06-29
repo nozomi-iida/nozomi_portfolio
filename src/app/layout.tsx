@@ -4,9 +4,35 @@ import { Toaster } from "@/components/ui/toaster";
 
 const inter = Poppins({ weight: "400", subsets: ["latin"] });
 
+const siteName = "Nozomi's portfolio";
+const description = "Nozomi's portfolio";
+const url = "nozomi-portfolio.vercel.app";
+
 export const metadata = {
-  title: "Nozomi's portfolio",
-  description: "Nozomi's portfolio",
+  title: {
+    default: siteName,
+  },
+  description,
+  openGraph: {
+    title: siteName,
+    description,
+    url,
+    siteName,
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description,
+    creator: "@nozo_i0106",
+  },
+  verification: {
+    google: "サーチコンソールのやつ",
+  },
+  alternates: {
+    canonical: url,
+  },
 };
 
 export default function RootLayout({
