@@ -60,8 +60,8 @@ export const ContactSection = () => {
         <div className="text-center">
           <button
             disabled={!isValid}
-            className={`bg-sky-500 text-white rounded-3xl py-3 px-10 text-sm hover:shadow-xl transition-shadow, ${
-              !isValid && "cursor-not-allowed"
+            className={`text-white rounded-3xl py-3 px-10 text-sm hover:shadow-xl transition-shadow, ${
+              isValid ? "bg-sky-500" : "cursor-not-allowed bg-gray-300"
             }`}
           >
             SEND
