@@ -25,22 +25,22 @@ export const WorksSection = () => {
           ]}
           imageUrl="/meeting_scheduler.png"
           githubLink="https://github.com/nozomi-iida/meeting-scheduler-with-google-calender"
-          liveLink="https://chrome.google.com/webstore/detail/meeting-scheduler-with-go/mkildadmiffilfedeghakgbjldpbjflk?hl=ja&authuser=0"
+          // liveLink="https://chrome.google.com/webstore/detail/meeting-scheduler-with-go/mkildadmiffilfedeghakgbjldpbjflk?hl=ja&authuser=0"
         />
         <WrokCard
-          title="Kindle daily sale twitter bot"
+          title="Kindle daily sale twitter bot(Currently stopped)"
           description={`- Wanted to learn about Rust.\n- Wanted to know the daily sale of kindle books.`}
           technologies={["Rust", "Twitter API"]}
           imageUrl="/kindle_daily_sale.png"
           githubLink="https://github.com/nozomi-iida/kindle_daily_sale_twitter_bot"
           liveLink="https://twitter.com/kindleDailyBot"
         />
-        <WrokCard
+        {/* <WrokCard
           title="Attendance management system"
           description={`- Be used as an attendance management system at my preview job\n- Study to use backend with Golang.`}
           technologies={["Golang", "React", "PostgreSQL"]}
           githubLink="https://github.com/nozomi-iida/attendance-management"
-        />
+        /> */}
       </div>
     </section>
   );

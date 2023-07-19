@@ -11,7 +11,11 @@ type ContactForm = {
 };
 
 export const ContactSection = () => {
-  const { register, handleSubmit } = useForm<ContactForm>();
+  const {
+    register,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<ContactForm>();
   const { toast } = useToast();
   const onSendMail = handleSubmit(async (params) => {
     try {
@@ -28,6 +32,7 @@ export const ContactSection = () => {
       });
     } catch (error) {}
   });
+
   return (
     <section className="py-20" id="contact">
       <SectionTitle title="CONTACT" subtitle="SAY HELLO" />
@@ -39,21 +44,26 @@ export const ContactSection = () => {
           className="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Your Email*"
           type="email"
-          {...register("email")}
+          {...register("email", { required: true })}
         />
         <input
           className="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Subject*"
           type="text"
-          {...register("subject")}
+          {...register("subject", { required: true })}
         />
         <textarea
           className="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           placeholder="Your Message*"
-          {...register("message")}
+          {...register("message", { required: true })}
         />
         <div className="text-center">
-          <button className="bg-sky-500 text-white rounded-3xl py-3 px-10 text-sm hover:shadow-xl transition-shadow">
+          <button
+            disabled={!isValid}
+            className={`bg-sky-500 text-white rounded-3xl py-3 px-10 text-sm hover:shadow-xl transition-shadow, ${
+              !isValid && "cursor-not-allowed"
+            }`}
+          >
             SEND
           </button>
         </div>
