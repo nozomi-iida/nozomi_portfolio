@@ -42,7 +42,7 @@ export const HomeSection = () => {
           <div className="flex mt-6 gap-6 items-center">
             <div>
               <Link
-                href="/NozomiIida_cv.pdf"
+                href="/nozomi_iida_cv.pdf"
                 className="bg-sky-500 text-white rounded-3xl py-3 px-8 text-sm hover:shadow-xl transition-shadow"
                 target="_blank"
               >
